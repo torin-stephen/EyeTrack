@@ -52,15 +52,13 @@ webgazer
     }
   })
   .begin()
-alert("Webgazer Active")
 
 webgazer.showVideoPreview(false).showPredictionPoints(true)
 
 
 function getNewImage(next = false) {
   const img = document.createElement("img")
-  //img.src = "https://picsum.photos/1000?" + Math.random()
-  img.src = "https://thispersondoesnotexist.com/"
+  img.src = "https://picsum.photos/1000?" + Math.random()
   if (next) img.classList.add("next")
   document.body.append(img)
   return img
