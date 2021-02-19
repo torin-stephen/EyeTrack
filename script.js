@@ -52,9 +52,10 @@ webgazer
     }
   })
   .begin()
+alert("Webgazer Active")
 
 webgazer.showVideoPreview(false).showPredictionPoints(true)
-alert("Webgazer Active")
+
 
 function getNewImage(next = false) {
   const img = document.createElement("img")
